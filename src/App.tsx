@@ -389,7 +389,7 @@ export default function App() {
         }}
       />
       {phase === "menu" && (
-        <div className="menu-hero absolute inset-0 z-0" style={{ backgroundImage: `url($/heroUrl/)` }} />
+        <div className="menu-hero absolute inset-0 z-0" style={{ backgroundImage: "url(/images/hero.jpg)" }} />
       )}
       <div className="vignette pointer-events-none absolute inset-0 z-10" />
       <div className="scanlines pointer-events-none absolute inset-0 z-10" />
@@ -614,7 +614,7 @@ export default function App() {
 
       {phase === "result" && (
         <section className="result-screen pointer-events-auto absolute inset-0 z-40 overflow-y-auto p-4 sm:p-8">
-          <div className="result-bg absolute inset-0" style={{ backgroundImage: `url($/heroUrl/)` }} />
+          <div className="result-bg absolute inset-0" style={{ backgroundImage: "url(/images/hero.jpg)" }} />
           <div className="relative mx-auto flex min-h-full max-w-5xl flex-col items-center justify-center py-6">
             <div className="result-eyebrow">{session.endedEarly ? "MISSION TERMINATED • KESEMPATAN HABIS" : "MISSION COMPLETE • ALL TARGETS ENGAGED"}</div>
             <div className="result-panel">
