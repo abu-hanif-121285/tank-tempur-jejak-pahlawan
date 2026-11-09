@@ -1,5 +1,4 @@
 import * as THREE from "three";
-import horizonUrl from "../assets/horizon.jpg";
 import type { Zone } from "../data/questions";
 
 function seeded(seed: number) {
@@ -640,7 +639,7 @@ export function createTextSprite(text: string, color: string) {
 
 export function loadHorizon() {
   const loader = new THREE.TextureLoader();
-  const texture = loader.load(horizonUrl);
+  const texture = loader.load("/images/horizon.jpg");
   texture.colorSpace = THREE.SRGBColorSpace;
   return texture;
 }
